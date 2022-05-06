@@ -114,7 +114,7 @@ def restoreTerminalSettings(old_settings):
 
 
 def vels(sl,al,sr,ar):
-    return 'Left: \tspeed %s [perc] \t angle %s [deg], Right: \tspeed %s [perc] \t angle %s [deg]' % (sl/1000,al*180/3.14159,sr/1000,ar*180/3.14159) 
+    return 'Left: \tspeed %s [perc] \t angle %s [deg], Right: \tspeed %s [perc] \t angle %s [deg]' % (sl/1400,al*180/3.14159,sr/1400,ar*180/3.14159) 
 
 
 def main():
@@ -138,7 +138,7 @@ def main():
     speed_left = 0.0
     angle_left = 0.0
 
-    speed_max = 10000.0
+    speed_max = 1400.0
     try:
         while True:
             print(vels(speed_left,angle_left,speed_right,angle_right))
